@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
+
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    will-change: transform, opacity;
+    overflow-x: hidden;
+}
+header {
+    background: linear-gradient(45deg, #474747, #020508);
+    color: white;
+}
+#about img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #587491;
+    border-radius: 20% 50% 50% 20%;
+    /*transition: transform 0.3s ease;*/
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background: #343a40;
+}
+.btn-primary {
+    background: linear-gradient(45deg, #474747, #020508);
+    border: none;
+}
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0d0d0e, #1c1d1d);
+}
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+.jump-in {
+    animation: jump 3s;
+}
+.slide-in {
+    animation: slide 3s;
+}
+
+@keyframes jump {
+    from{
+        transform: translateY(150px);
+        opacity: .3;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide {
+    from{
+        transform: translateX(150px);
+        opacity: .3;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+</style>
+</head>
+<body>
+    <header class="text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">BICODE</h1>
+            <p class="lead">Web Developer | Software Developer</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="py-5 slide-in" >
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="images/close-up-portrait-happy-young-african-man-with-stylish-haircut-looking.jpg" class="rounded img-fluid mb-3"alt="Bicode" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                    <p>I am a dedicated web and software developer that specializes in crafting innovative, user-friendly, and scalable digital solutions. 
+                        With expertise in modern programming languages, frameworks, and technologies. 
+                     I, Bicode, focuses on building responsive websites, intuitive web applications, and custom software tailored to meet the unique needs of clients. 
+                     My commitment to delivering high-quality results and seamless user experiences makes me a reliable partner for businesses aiming to enhance their digital presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light jump-in">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/gabrielle-henderson-g-9b4W7N67U-unsplash.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Discover a stylish collection of high-quality bags for every occasion. Our responsive website, built with HTML, CSS, and JavaScript, ensures a seamless shopping experience. Find the perfect bag to suit your lifestyle with ease</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/viktor-forgacs-3PyBkxgTiL0-unsplash.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">I built a Forex Blockchain platform for seamless, transparent currency exchange. Using secure blockchain technology, the site offers real-time trading with enhanced efficiency and decentralization, providing a modern solution for Forex traders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/icons8-team-7LNatQYMzm4-unsplash.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">I created a dynamic music blog featuring the latest trends, reviews, and insights. With an easy-to-navigate design, it offers a seamless reading experience for music lovers. Stay updated with fresh content and in-depth articles on all things music.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form id="form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" autocomplete="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" autocomplete="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" autocomplete="off" required></textarea>
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-4">
+        <div class="container">
+            <p class="mb-3">&copy; 2025 John Doe. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://wa.me/07083055842" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/bicodes_5" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/Bello Inusa" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
